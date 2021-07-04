@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baghadad University</title>
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+       <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onload="ready()">
+    <div id="varify1"></div>
+    <div id="varify2"></div>
+    <div id="varify3"></div>
+    <div id="varify4"></div>
+
+    <div id="container"> <div id="loader1"></div><div id="loaderobj1"></div><div id="loader2"></div><div id="loaderobj2"></div> </div>
+       <script>
+           if(1==1){
+            var a= screen.width/2;
+               document.getElementById("container").style.left=a-"26"+"px";
+
+           }
+    </script>
+
+    <div id="customization">
+           <div id="customcornerstyle1"></div>
+           <div id="customcornerstyle2"></div>
+           <center> <div id="customtitle">Registration</div></center>
+           <p id="customtext"><br/>Created by Group B.<br/></p>
+           <p id="customalert">
+               [Note: press skip to enter our college.]
+           </p>
+           <p id="customindicate">
+               Institute Type:<br/>
+                <select id="customselect">
+                   <option>University</option>
+                   <option>College</option>
+               </select></p>
+               <p id="customindicate">
+                   University/College Name:
+                   <p id="customtext">Write only the college name without University/College word.<br/>
+                   Example1(University):Baghdad<br/>
+                   Example2(College):Al-Khwarizmi<br/><br/>
+                   <input type="text" placeholder=" University/College Name" id="custominputname">
+                   </p>
+               </p>
+            <p id="customindicate">Contact Number:<br/>
+            <input type="number" placeholder="11 digit phone number" id="custominputnumber">
+            </p>
+            <p id="customindicate">E-mail Address:<br/>
+            <input type="text" placeholder="e-mail" id="custominputmail">
+            </p>
+            <p id="customindicate">Department<br />
+            <select id="customlogo">
+                <option>Information and Communication Engineering</option>
+                <option>Biomedical Engineering</option>
+                <option>Manufacturing Processes Engineering</option>
+                <option>Mechatronics Engineering</option>
+                <option>Biochemical Engineering</option>
+            </select>
+            </p>
+            <p id="customindicate">
+                Country:<br/>
+                <input type="text" placeholder="city/country" id="custominputplace">
+            </p>
+            <p id="customalert">
+                [Fill the form to customize your University or default values will be set. Enjoy!]
+            </p><br/><br/><br/><br/>
+            <div id="customfooter"><button id="customskip" onclick="customskip()">SKIP</button><button id="customcontinue" onclick="customcontinue()"><center>CONTINUE</center></button></div>
+        </div>
+
+    <div id="maincontainer">
+        <div id="header">
+            <div id="navicon" onclick="navmenu()">
+                <div id="stick"></div>
+            </div>
+            <div id="name">
+                <div id="name1">Al-Khwarizmi</div>
+                <div id="name2">College</div>
+            </div>
+            <div id="date"></div>
+        </div>
+
+        <div id="menu">
+            <div id="home" onclick="home()">Home</div>
+            <div id="edu" onclick="edu()">Eduation</div>
+            <div id="act" onclick="act()">Activity</div>
+            <div id="about" onclick="about()">About</div>
+            <button id="sign" onclick="sign()">SIGN IN</button>
+        </div>
+    <div id="navbar">
+        <div id="closenav" onclick="closenav()"><div id="stk1"></div><div id="stk2"></div></div>
+        <p>MENU</p><hr/>
+        <div onclick="home()">HOME</div><br/>
+        <div onclick="edu()">EDUCATION</div><br/>
+        <div onclick="act()">ACTIVITY</div><br/>
+        <div onclick="about()">ABOUT</div><br/>
+        <div onclick="sign()" style="color:lightgray">SIGN IN</div>
+    </div>
+   <script>
+       //date
+       function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+   if(hours>12) {var hours= hours-12;
+    document.getElementById("date").innerHTML = hours+":"+mins+"PM";}
+    else{
+        document.getElementById("date").innerHTML = hours+":"+mins+"AM";
+    }
+}
+setInterval(printTime, 1000);
+       //navbar
+       function navmenu(){
+           document.getElementById("navbar").style.display="block";
+           document.getElementById("navbar").style.animation="navbar .3s 1 linear";
+       }
+       function closenav(){
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+
+       //menu functions
+       function home(){
+           document.getElementById("homepage").style.display="block";
+           document.getElementById("edupage").style.display="none";
+           document.getElementById("actpage").style.display="none";
+           document.getElementById("aboutpage").style.display="none";
+           document.getElementById("signpage").style.display="none";
+           document.getElementById("applypage").style.display="none";
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+       function edu(){
+           document.getElementById("homepage").style.display="none";
+           document.getElementById("edupage").style.display="block";
+           document.getElementById("actpage").style.display="none";
+           document.getElementById("aboutpage").style.display="none";
+           document.getElementById("signpage").style.display="none";
+           document.getElementById("applypage").style.display="none";
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+       function act(){
+           document.getElementById("homepage").style.display="none";
+           document.getElementById("edupage").style.display="none";
+           document.getElementById("actpage").style.display="block";
+           document.getElementById("aboutpage").style.display="none";
+           document.getElementById("signpage").style.display="none";
+           document.getElementById("applypage").style.display="none";
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+       function about(){
+           document.getElementById("homepage").style.display="none";
+           document.getElementById("edupage").style.display="none";
+           document.getElementById("actpage").style.display="none";
+           document.getElementById("aboutpage").style.display="block";
+           document.getElementById("signpage").style.display="none";
+           document.getElementById("applypage").style.display="none";
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+       function sign(){
+           document.getElementById("homepage").style.display="none";
+           document.getElementById("edupage").style.display="none";
+           document.getElementById("actpage").style.display="none";
+           document.getElementById("aboutpage").style.display="none";
+           document.getElementById("signpage").style.display="block";
+           document.getElementById("applypage").style.display="none";
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+
+       function apply(){
+           document.getElementById("homepage").style.display="none";
+           document.getElementById("edupage").style.display="none";
+           document.getElementById("actpage").style.display="none";
+           document.getElementById("aboutpage").style.display="none";
+           document.getElementById("signpage").style.display="none";
+           document.getElementById("applypage").style.display="block";
+           document.getElementById("navbar").style.display="none";
+           document.getElementById("navbar").style.animation="";
+       }
+   </script>
+        <script>
+     function animation(){
+        var sub=document.getElementById("mainbody")
+        var pos =sub.getBoundingClientRect().top;
+        var height=sub.clientHeight;
+        var clienth=document.getElementById("slideshow").clientHeight*(2/3);
+        if(pos>=0){
+            var opac;
+            opac=pos/clienth;
+            document.getElementById("slideshow").style.opacity=opac;
+            document.getElementById("shorttext").style.opacity=opac;
+        }
+        else{
+            document.getElementById("slideshow").style.opacity="0"
+            document.getElementById("shorttext").style.opacity="0"
+        }
+        }
+        window.addEventListener("scroll",animation)
+        window.addEventListener("resize",animation)
+
+
+      function customskip(){
+          document.body.style.background="#bbefff";
+          document.getElementById("customization").style.display="none";
+          document.getElementById("maincontainer").style.display="block";
+          window.scrollTo(0,0);
+          const Toast = Swal.mixin({
+toast: true,
+position: 'top-end',
+showConfirmButton: false,
+timer: 1500,
+timerProgressBar: true,
+onOpen: (toast) => {
+toast.addEventListener('mouseenter', Swal.stopTimer)
+toast.addEventListener('mouseleave', Swal.resumeTimer)
+}
+})
+
+Toast.fire({
+icon: 'success',
+title: 'default value set'
+})
+
+      }
+
+
+     function customcontinue(){
+       var a=document.getElementById("customselect").value;
+     var b=document.getElementById("custominputname").value;
+     var c=document.getElementById("custominputnumber").value;
+     var d=document.getElementById("custominputmail").value;
+     var e=document.getElementById("custominputplace").value;
+       var f=document.getElementById("customlogo").value;
+     if(b&&c&&d&&e!="")
+          {
+
+          document.body.style.background="#bbefff";
+          document.getElementById("customization").style.display="none";
+          document.getElementById("maincontainer").style.display="block";
+          window.scrollTo(0,0)
+
+          document.getElementById("name2").innerHTML=a;
+
+          document.getElementById("name1").innerHTML=b;
+          document.getElementById("insnamereplace").innerHTML=b+" "+a;
+          document.getElementById("insnamereplace2").innerHTML=b+" "+a;
+
+          document.getElementById("changemail").innerHTML=d;
+          document.getElementById("mail").href="mailto:"+d;
+
+          document.getElementById("changephone").innerHTML=c;
+          //select college
+          document.getElementById("changeaddress").innerHTML=e;
+          if(f=="Information and Communication Engineering"){}
+          if(f=="Biomedical Engineering"){document.getElementById("insimg").style.backgroundImage='url("https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/University_of_Baghdad_official_seal.svg/628px-University_of_Baghdad_official_seal.svg.png")'}
+          if(f=="Manufacturing Processes Engineering"){document.getElementById("insimg").style.backgroundImage='url("https://kecbu.uobaghdad.edu.iq/wp-content/uploads/sites/29/2020/11/cropped-82400330_626677371432347_3294552533816573952_n-1-1.jpg")'}
+          if(f=="Mechatronics Engineering"){document.getElementById("insimg").style.backgroundImage='url("https://kecbu.uobaghdad.edu.iq/wp-content/uploads/sites/29/2020/11/cropped-82400330_626677371432347_3294552533816573952_n-1-1.jpg")'}
+           if(f=="Biochemical Engineering"){document.getElementById("insimg").style.backgroundImage='url("https://kecbu.uobaghdad.edu.iq/wp-content/uploads/sites/29/2020/11/cropped-82400330_626677371432347_3294552533816573952_n-1-1.jpg")'}
+
+          const Toast = Swal.mixin({
+toast: true,
+position: 'top-end',
+showConfirmButton: false,
+timer: 3000,
+timerProgressBar: true,
+onOpen: (toast) => {
+toast.addEventListener('mouseenter', Swal.stopTimer)
+toast.addEventListener('mouseleave', Swal.resumeTimer)
+}
+})
+
+Toast.fire({
+icon: 'success',
+title: 'customisation successful'
+})
+          }
+      else{
+          const Toast = Swal.mixin({
+toast: true,
+position: 'top-end',
+showConfirmButton: false,
+timer: 1500,
+timerProgressBar: true,
+onOpen: (toast) => {
+toast.addEventListener('mouseenter', Swal.stopTimer)
+toast.addEventListener('mouseleave', Swal.resumeTimer)
+}
+})
+
+Toast.fire({
+icon: 'error',
+title: 'fill in gaps to continue'
+})
+      }
+      }
+
+
+
+
+
+     function ready(){
+         document.body.style.background="#10324b";
+          document.getElementById("customization").style.display="block";
+          document.getElementById("container").style.display="none";
+          Swal.fire(
+'Baghdad University',
+'"Welcome to Baghdad university."',
+'info'
+)
+     }
+
+
+
+
+
+
+     function signbtn(){
+     var a=document.getElementById("signinid").value;
+     var b=document.getElementById("signinmail").value;
+     var c=document.getElementById("signinpassword").value;
+     if(a&&b&&c!=""){
+         const Toast = Swal.mixin({
+toast: true,
+position: 'top-end',
+showConfirmButton: false,
+timer: 1500,
+timerProgressBar: true,
+onOpen: (toast) => {
+toast.addEventListener('mouseenter', Swal.stopTimer)
+toast.addEventListener('mouseleave', Swal.resumeTimer)
+}
+})
+
+Toast.fire({
+icon: 'success',
+title: 'Signed in successfully'
+})
+
+      document.getElementById("signbody").innerHTML ="<center>sign in successful</center>";}
+     }
+
+
+     function applybtn(){
+     var a=document.getElementById("applyname").value;
+     var b=document.getElementById("applysub").value;
+     var c=document.getElementById("applymark").value;
+     var d=document.getElementById("applyphone").value;
+     var e=document.getElementById("applymail").value;
+       if(a&&b&&c&&d&&e!=""){
+         const Toast = Swal.mixin({
+toast: true,
+position: 'top-end',
+showConfirmButton: false,
+timer: 1500,
+timerProgressBar: true,
+onOpen: (toast) => {
+toast.addEventListener('mouseenter', Swal.stopTimer)
+toast.addEventListener('mouseleave', Swal.resumeTimer)
+}
+})
+
+Toast.fire({
+icon: 'success',
+title: 'application recieved successfully'
+})
+
+      document.getElementById("applybody").innerHTML ="<center>application received successfully</center>";}
+     }
+
+
+
+
+ </script>
+        <div id="changeable">
+            <div id="homepage">
+                <div id="shorttext"><i><b><br/><br/><br/><br/>explore the wonders of knowledge and become a part of Al-Khwarizmi college history<br/>Regstier now !</b></i></div>
+                <div id="slideshow"></div>
+                <div id="mainbody">
+                 <br/>
+                 <center>
+                     <p id="mainbodytext">
+
+                         <b>Welcome to<br/><div id="insimg"></div><br><span class="insnamereplace">Al-Khwarizmi College</span>.</b><br/></p>
+
+                      <p id="mainbodytext" style="text-indent:20px"> KWH have advanced higher education . at our college you will have a deeper knowledge for climbing the career ladder. apply today and be a part of our family!.
+                     </p>
+                     <b><button id="applybutton" onclick="apply()">APPLY NOW!</button></b>
+                       <br/>
+                     <br/>
+                     <br/>
+                     <p id="mainbodytexthigh" ><b>Principle message<br/> </b></p>
+
+                      <p id="mainbodytext" style="text-indent:20px">
+                          Welcome to <b><span id="insnamereplace2" style="color:#1d3c5a;">Al-Khwarizmi college</span></b>, an educational institute which has been serving the nation with a long standing tradition of excellence in academics, the science, business and arts.<span id="small" style ="font-variant:normal;"> - Principle</span>
+                      </p>
+                      <br/>
+                       <p id="mainbodytexthigh" ><b>About Our College<br/> </b></p>
+                     <div id="ad">
+                        <div id="adtext">
+                        <span style="font-size:20px;color:white"><b>Who Are We</b></span>
+                      </br> <br>
+                          <span class="sp">  The Department of Information Engineering was established at the beginning of the 1997-1998 academic year and joined the Al-Khwarizmi College of Engineering<br>in the 2002-2003 academic year.  The study period is four years, the students are taught various topics in information engineering. These topics cover<br>a variety of</span><span>topics in communications and information engineering, such as software for computer networks and how they can be linked through communications through its security channels. After successfully passing the course subjects, the students were awarded a Bachelor's degree in Information Engineering.</span></div>
+                        <div id="adtimg"></div>
+                     </div>
+
+                     <div id="ad">
+                        <div id="adtext">
+                        <span style="font-size:20px;color:white"><b>Our Vision And Goals</b><br> </span>
+                        <br/> <span class="sp">
+                        The Vision  The Department of Information and Communications Engineering seeks to graduate students who are able to efficiently address engineering problems<br>in their field by providing them with modern theoretical and practical curricula related to information and communication engineering.<br>
+                          Our Goal is Develop and improve the teaching capabilities and research capabilities of faculty members so that they can graduate an engineer capable of meeting local and global industrial demands</span> </div>
+                        <div id="adlimg"></div>
+                     </div>
+
+                     <div id="ad">
+                        <div id="adtext">
+                        <span style="font-size:19px;color:white"><b>Our message</b></span>
+                        <br/> <br> <span class="sp">
+                        Teaching ICT through:
+<br>
+Develop students by providing them with modern technologies. <br>
+
+Creating a new generation of engineers who are professionally capable of modernizing ICT infrastructures.
+<br>
+Providing services to society by solving problems facing industry sectors.</span>
+                             </div>
+                        <div id="adrimg"></div>
+                     </div>
+
+
+                     <p id="mainbodytext">
+                         Education is considered to be the core instrument of human development. our objective is the harmonious development of the intellectual, physical, social, moral and spiritual faculties of the students. at the heart of the institution is a core of shared values, which reflects our ethos and everything we do. these values foster high standards of behavior and achievement, support a framework of respect, promote self-confidence and provide a warm, harmonious environment in which our student learn and grow.
+                     </p><br/>
+                     <span id="mainbodytexthigh" ><b>Latest<br/> </b></span>
+                 <div id="recent">
+                     <hr/>
+                     <b>final result published </b>2021 25th June
+                     <hr/>
+                     <b>project date </b>- 2021 3rd June
+                     <hr/>
+                 </div>
+
+                     <br/><br/>
+                 <p id="mainbodytext" style="font-size:17px">Our best wishs<br/>2021© Group -B- all rights reserved</p>
+                     <br/>
+
+                 <div id="footer">
+            <button id="note1">Contact us</button>
+            <div id="note2"></div>
+            <div id="fakeit"></div>
+            <div id="footerbody">
+                        <br/><br/>
+                           <a href="mailto:web.admin@kecbu.uobaghdad.edu.iq" class="footertext" id="mail"><b>√ E-mail:</b><br/><a style="font-size:15px">alkhwarizmi@kecbu.uobaghdad.edu.iq</a></a>
+                           <br/><br/>
+                           <a class="footertext"><b>√ Call Us:</b><br/><a  style="font-size:15px">+964 7xxxxxxxxx</a></a>
+                           <br/>
+
+                        </div>
+                </div>
+                 </center>
+
+        </div>
+
+            </div>
+
+            <div id="edupage">
+                <div id="edubody"><center><b> <iframe src="Edu.html" style="    position:absolute ;
+                      width:100%;
+                      left:0%;
+                      height:85%;
+                      top:75px;"></iframe></center></div>
+            </div>
+            <div id="actpage">
+                <div id="actbody">
+                         <center><b> <iframe src="Activity.html" style="    position:absolute ;
+                         width:100%;
+                         left:0%;
+                         height:85%;
+                         top:75px;"></iframe></center>
+                    </p>
+                </div>
+            </div>
+            <div id="aboutpage">
+                <div id="aboutbody">
+                    <center>
+                        <div id="profimg"></div>
+                        <p id="mainbodytext">hi, we are Group B. this is our official university website.  We worked so hard to make this better. We hope you like it </p>
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>GROUP B Members
+          </h6>
+          <p>
+            <a href="https://www.facebook.com/FUB32" >Mohamed Baqer</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/salu224" >Salwan Adnan</a>
+          </p>
+           <p>
+            <a href="https://www.facebook.com/Mustafa.nyaz01" >Mustafa Ibrahim</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/akeel.saad.7" >Aqeel Saad</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/ahmed.ayad.50999405">Ahmed Ayad</a>
+          </p>
+        </div>
+                    </center>
+                </div>
+            </div>
+            <div id="signpage">
+                <div id="signbody">
+                <a id="mainbodytext" style="margin:35px;"> enter your student id<br/>
+                <input type="number" id="signinid" placeholder="student id"><br/></a>
+
+                <a id="mainbodytext" style="margin:35px;"> enter your e-mail <br/>
+                <input type="text" id="signinmail" placeholder="e-mail"><br/></a>
+
+                <a id="mainbodytext" style="margin:35px;"> enter your password <br/>
+                <input type="password" id="signinpassword" placeholder="password"></a>
+
+                    <button id="signbtn" onclick="signbtn()"><b>SIGN IN</b></button>
+                </div>
+            </div>
+
+
+           <div id="applypage">
+                <div id="applybody">
+
+                <a id="mainbodytext" style="margin:35px;"> enter your name<br/>
+                <input type="text" id="applyname" placeholder="name"><br/></a>
+
+                <a id="mainbodytext" style="margin:35px;"> enter your subject<br/>
+                <input type="text" id="applysub" placeholder="subject"><br/></a>
+
+                <a id="mainbodytext" style="margin:35px;"> enter your marks<br/>
+                <input type="number" id="applymark" placeholder="marks"><br/></a>
+
+                <a id="mainbodytext" style="margin:35px;"> enter your phone number<br/>
+                <input type="number" id="applyphone" placeholder="number"><br/></a>
+
+                <a id="mainbodytext" style="margin:35px;"> enter your e-mail <br/>
+                <input type="text" id="applymail" placeholder="e-mail"><br/></a>
+
+                    <button id="applybtn" onclick="applybtn()"><b>APPLY NOW</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <marquee>hello everyone. welcome to one of the best colleges in Baghdad. We are here to serve the students as well as the country. We try our best to meet a student with his cherished dream.</marquee>
+   </body>
+</html>

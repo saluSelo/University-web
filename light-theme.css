@@ -1,0 +1,357 @@
+/*body {
+  background: white;
+  transition: 0.5s;
+}
+.la
+{
+  margin-top: -10px;
+}
+#ChangeTheme {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.cr{
+  margin: auto;
+}
+.lects{
+  margin: auto;
+}
+label {
+  display: block;
+  height: 15px;
+  width: 60px;
+  position: relative;
+}
+span.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+  border-radius: 30px;
+  vertical-align:middle;
+}
+span.slide:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  top: -2px;
+  left: 0px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
+}
+.txt {
+  position: relative;
+  transform: translatex(-50px);
+}
+.txt p:nth-child(1) {
+  color: grey;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+#ChangeTheme:checked + span.slide:before {
+  transform: translatex(40px);
+}
+
+body.dark-mode {
+  background: #353535;
+  color: white;
+}
+.dark-mode .txt p:nth-child(1) {
+  color: #000;
+  font-weight: normal;
+}
+.dark-mode .txt p:nth-child(2) {
+  color: grey;
+  font-weight: bold;
+}
+
+
+  #pdf1{
+    border: 50px none;}
+#analogcommunication#pdf1{
+  align-items: center;
+}
+
+
+    tr {
+
+      text-align: center
+    }
+
+    table.customTable {
+      width: 100%;
+      background-color: #3C8DAD;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #FFFF00;
+      border-style: solid;
+      color: #000000;
+      color: white;
+    }
+
+    table.customTable td,
+    table.customTable th {
+      border-width: 2px;
+      border-color: #FFFF00;
+      border-style: solid;
+      padding: 5px;
+    }
+
+    table.customTable thead {
+      background-color: #125D98;
+    }
+
+    div.row {
+      height: 300px;
+      margin-top: 50px;
+    }
+
+    .vid {
+      border-width: 50px;
+      border-style: none;
+    }
+
+    .pdfphoto {
+      height: 300px;
+      width: 300px;
+    }
+
+
+    .mapouter {
+      text-align: right;
+      height: 500px;
+      width: 600px;
+    }
+
+    .mapouter {
+      text-align: right;
+      height: 500px;
+      width: 600px;
+    }
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 500px;
+      width: 600px;
+    }
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 500px;
+      width: 600px;
+    }
+
+    span {
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-link {
+      font-style: oblique;
+    }
+
+    .dropdown-backdrop {
+      position: static;
+    }
+
+    #mainicon {
+      height: 50px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+      border: 3px solid rgb(18, 93, 152);
+      box-shadow: inset 0 0 4px 2px white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #3C8DAD;
+      border-radius: 10px;
+    }
+*/
+
+body {
+  background: white;
+  transition: 0.5s;
+}
+
+.la {
+  margin-top: -10px;
+}
+
+#ChangeTheme {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.cr {
+  margin: auto;
+}
+
+.lects {
+  margin: auto;
+}
+
+label {
+  display: block;
+  height: 15px;
+  width: 60px;
+  position: relative;
+}
+
+span.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dadada;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+
+span.slide:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  top: -2px;
+  left: 0px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
+}
+
+.txt {
+  position: relative;
+  transform: translatex(-50px);
+}
+
+.txt p:nth-child(1) {
+  color: grey;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+
+#ChangeTheme:checked+span.slide:before {
+  transform: translatex(40px);
+}
+
+/* if dark-mode class is added set this background */
+
+tr {
+  text-align: center
+}
+
+table.customTable {
+  width: 100%;
+  background-color: #3C8DAD;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #FFFF00;
+  border-style: solid;
+  color: #000000;
+  color: white;
+}
+
+table.customTable td,
+table.customTable th {
+  border-width: 2px;
+  border-color: #FFFF00;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.customTable thead {
+  background-color: #125D98;
+}
+
+.vid {
+  height: 300px;
+  padding: 1%;
+  margin-top: 50px;
+  border-style: none;
+}
+
+.pdf {
+  padding: 1%;
+  margin-top: 50px;
+  border-style: none;
+}
+.pdfs{
+  margin-bottom: 50px;
+}
+.pdfphoto {
+  height: 100%;
+  width: 100%;
+}
+
+.mapouter {
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.mapouter {
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+span {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  font-style: oblique;
+}
+
+.dropdown-backdrop {
+  position: static;
+}
+
+#mainicon {
+  height: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border: 3px solid rgb(18, 93, 152);
+  box-shadow: inset 0 0 4px 2px white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3C8DAD;
+  border-radius: 10px;
+}

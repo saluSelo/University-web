@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
+  <link rel="stylesheet" type="text/css" href="styleh.css" />
+  <title>Home</title>
+  <style media="screen">
+  </style>
+  <style>
+    .video { position: relative;
+    display: block;}
+    .video {
+      border-bottom: 5px solid transparent;
+      box-shadow: 0px 20px 20px -10px #4e4e4e;
+      border-image: linear-gradient(to right, #052558 20%, #052558 20%, #052558 40%, #052558 40%, #052558 60%,  #052558 60%, #052558 80%, #052558 80%, #052558 100%);
+      border-image-slice: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="logo">
+        <a class="navbar-brand" href="Edu.html" style="font-family: 'Poppins', sans-serif;"><img src="https://kecbu.uobaghdad.edu.iq/wp-content/uploads/sites/29/2021/01/%D9%83%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A.png" alt="icon" id="mainicon"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active"><a class="nav-link" href="Edu.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">1st Stage</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span>Course One</span>
+              <li><a class="dropdown-item" href="#" onclick="show('computerprogramming')">Computer Programming</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('electricalcircuits')">Electrical Circuits</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('engenerringdrawing')">Engenerring Drawing</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('computerscience')">Computer Science</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('digitaldesign')">Digital Design</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('physics')">Physics</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('english1')">English I</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('math1')">Math I</a></li>
+              <span>Course Two</span>
+              <li><a class="dropdown-item" href="#" onclick="show('humanrightsanddemocracy')">Human Rights & Democracy</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('structurdprogramming')">Structured Programming</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('digitalsystemdesign')">Digital System Design</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('electricaldevices')">Electronic Devices</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('probability')">Probability</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('math2')">MathII</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('arabic')">Arabic</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">2nd Stage</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span>Course One</span>
+              <li><a class="dropdown-item" href="#" onclick="show('objectorientedprogramming')">Object Oriented Programming</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('signalsandsystems1')">Signals and Systems I</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('electroinicsystems')">Electronoic Systems</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('microprocessor')">Microprocessor</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('english2')">English II</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('emfields')">EM Fileds</a></li>
+              <span>Course Two</span>
+              <li><a class="dropdown-item" href="#" onclick="show('webdd')">Web Design and Development</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('signalsandsystems2')">Signals and Systems II</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('analogcommunication')">Analoge Communication</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('programmingparadigms')">Programming Paradigms</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('antennatheory')">Antenna Theory</a></li>
+              <li><a class="dropdown-item" href="#" onclick="show('dataanalysis')">Data Analysis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">3rd Stage</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span>Course One</span>
+              <li><a class="dropdown-item" href="#">Computer Architecture</a></li>
+              <li><a class="dropdown-item" href="#">Digital Communication</a></li>
+              <li><a class="dropdown-item" href="#">Information Theory</a></li>
+              <li><a class="dropdown-item" href="#">Computer Networks</a></li>
+              <li><a class="dropdown-item" href="#">English III</a></li>
+              <li><a class="dropdown-item" href="#">DSP</a></li>
+              <li><a class="dropdown-item" href="#">DS</a></li>
+              <span>Course Two</span>
+              <li><a class="dropdown-item" href="#">Computer Algorithms</a></li>
+              <li><a class="dropdown-item" href="#">Technical Assignment</a></li>
+              <li><a class="dropdown-item" href="#">Error Control Coding</a></li>
+              <li><a class="dropdown-item" href="#">Network Protocols</a></li>
+              <li><a class="dropdown-item" href="#">DBD</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">4th Stage</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span>Course One</span>
+              <li><a class="dropdown-item" href="#">Digital Image Processing</a></li>
+              <li><a class="dropdown-item" href="#">Network Managment</a></li>
+              <li><a class="dropdown-item" href="#">Wirless Mobile</a></li>
+              <li><a class="dropdown-item" href="#">English IIII</a></li>
+              <li><a class="dropdown-item" href="#">Internet</a></li>
+              <li><a class="dropdown-item" href="#">OS</a></li>
+              <span>Course Two</span>
+              <li><a class="dropdown-item" href="#">Satalite Communication</a></li>
+              <li><a class="dropdown-item" href="#">Optical Communication</a></li>
+              <li><a class="dropdown-item" href="#">Information Systems</a></li>
+              <li><a class="dropdown-item" href="#">Microwave Circuits</a></li>
+              <li><a class="dropdown-item" href="#">Wirless Netorking</a></li>
+              <li><a class="dropdown-item" href="#">Cryptography</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link lects" href="#" onclick="show('lectures')">Lectures </a></li>
+
+          <li class="nav-item la"><label for="ChangeTheme"id="la">
+            <input type="checkbox" id="ChangeTheme" /> <span class="slide"></span>
+          </label></li>
+
+          <li class="nav-item cr"><a class="nav-link disabled" href="">&copyGROUP B</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="maindiv"> 
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_500954400_401583.jpg" alt="First slide">
+            </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.teahub.io/photos/full/37-379993_px-exam-wallpapers-4wc76kt-teacher-things-in-school.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.theeditingco.com/assets/media/g10003/Finding-Your-Flow:-A-Self-Study-Approach-To-The-Academic-Writing-Process-1461395912.jpg" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+</div>
+</div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+    <div class="me-5 d-none d-lg-block">
+    </div>
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+
+      <div class="row mt-3">
+
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>GROUP B Members
+          </h6>
+          <p>
+            <a href="https://www.facebook.com/FUB32" >Mohamed Baqer</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/salu224" >Salwan Adnan</a>
+          </p>
+           <p>
+            <a href="https://www.facebook.com/Mustafa.nyaz01" >Mustafa Ibrahim</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/akeel.saad.7" >Aqeel Saad</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/ahmed.ayad.50999405">Ahmed Ayad</a>
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Other Projects
+          </h6>
+          <p>
+            <a href="https://xd.adobe.com/embed/97bb8c45-b24b-489e-a090-51a00aceae03-c2e8/" class="text-reset">Iphone 9</a>
+          </p>
+          <p>
+            <a href="https://mustafanyaz.000webhostapp.com/Music_Player/index.html" class="text-reset">Music Player</a>
+          </p>
+           <p>
+            <a href="https://mustafanyaz.000webhostapp.com/IDE/IDE4.html" class="text-reset">IDE</a>
+          </p>
+          <p>
+            <a href="https://mustafanyaz.000webhostapp.com/Windows_9/windows_9.html" class="text-reset">Windows 9</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">University (Current)</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="https://mustafanyaz.000webhostapp.com/About/index.html" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="https://t.me/joinchat/qNwva8V-qRJiYWJi" class="text-reset">Our channel</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i>Baghdad, Karada, UOB</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+          Group-b-@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 964 77 0000 000</p>
+          <p><i class="fas fa-print me-3"></i> + 964 78 0000 000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright: GROUP B
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+  <div class="cp" id="computerprogramming" style="display:none;">
+      
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="pdfs\1st stage pdf\computerprogramming\_D_S_Malik_C_Programming_Program_Design_incluz_lib_org.pdf" target="_blank"><img class="pdfphoto" src="pdfs/1st stage pdf/computerprogramming/malikbook.png" alt=""></a>
+      </div>
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf2">
+        <a href="pdfs\1st stage pdf\computerprogramming\-Mike_McGrath-_C--_Programming_in_Easy_Steps(z-lib.org).pdf" target="_blank"><img class="pdfphoto" src="pdfs/1st stage pdf/computerprogramming/mikebook.png" alt=""></a>
+      </div>
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf3">
+        <a href="pdfs\1st stage pdf\computerprogramming\-Paul_Deitel,_Harvey_Deitel-_C--_How_to_Program(z-lib.org).pdf" target="_blank"><img class="pdfphoto" src="pdfs/1st stage pdf/computerprogramming/paul.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="electricalcircuits" style="display:none;">
+
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="PDFs\1st stage pdf\Circuits\Fundamentals_of_Electric_Circuits_-1762101130.pdf" target="_blank"><img class="pdfphoto" src="image/1st stage/Circuits/circuit.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="engenerringdrawing" style="display:none;">
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="PDFs\1st stage pdf\engineering drawing\2D_AutoCAD_2009.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\engineering drawing\2D_AutoCAD_2009.png" alt=""></a>
+      </div>
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf2">
+        <a href="PDFs\1st stage pdf\engineering drawing\3D_AutoCAD.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\engineering drawing\3d.png" alt=""></a>
+      </div>
+      </div>
+
+    </div>
+  <div class="cp" id="computerscience" style="display:none;">
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="Assignment3.pdf" target="_blank"><img class="pdfphoto" src="pdfphoto.png" alt=""></a>
+      </div>
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf2">
+        <a href="Assignment3.pdf" target="_blank"><img class="pdfphoto" src="pdfphoto.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="digitaldesign" style="display:none;">
+
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf2">
+        <a href="PDFs\1st stage pdf\Logic\Digital_logic_Design_Morris_Mano.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\Logic\maino.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="physics" style="display:none;">
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf2">
+        <a href="PDFs\1st stage pdf\physics\2_5458545563655995736.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\physics\p1.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="english1" style="display:none;">
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="PDFs\1st stage pdf\english\newheadwaybeginnerstudentbook.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\english\e1.png" alt=""></a>
+      </div>
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf4">
+        <a href="Assignment3.pdf" target="_blank"><img class="pdfphoto" src="pdfphoto.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="math1" style="display:none;">
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="PDFs\1st stage pdf\Maths\Thomas Calculus 11th Edition - G. Thomas Weir Et A_-46581012.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\Maths\m1.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="cp" id="humanrightsanddemocracy" style="display:none;">
+    <div class="row pdf" id="pdfs">
+      <div class="col-es-12 col-sm-6 col-md-4 col-lg-3" id="pdf1">
+        <a href="pdfs\1st stage pdf\humanrights\2_5314261012134757932.pdf" target="_blank"><img class="pdfphoto" src="PDFs\1st stage pdf\Maths\m1.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+      <div class="cp" id="emfields" style="display:none;">
+       <center>  <br/> <h3>Course Lectures</h3><br/></center>
+       <center> <iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLlsZICrXad5Zj_rtLfYRaCG0icyl9zvGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+         <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=18qiKvLuhTh9XAl5j_MF7bfiqw_Evj2JD');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=18qiKvLuhTh9XAl5j_MF7bfiqw_Evj2JD');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library </h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1qy6t_GPKMCuLOpXx37T3M7ydaGQ-hGq4/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+         </div>
+
+    <div class="cp" id="electroinicsystems" style="display:none;">
+       <center>  <br/> <h3>Course Lectures</h3><br/></center>
+       <center> <iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLlsZICrXad5YrgO1HabX6rpMO4BzYi-zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+         <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/713nuAlWOUL.jpg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/713nuAlWOUL.jpg');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library </h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1zSQkYvLfsILBd5ne7eOj4ZWGL1NXPCHA/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>  
+         </div>
+
+  <div class="cp" id="analogcommunication" style="display:none;">
+         <center><br/> <h3>Course Lectures</h3><br/> </center>
+     <center><iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLLFu4Nd83Kc4oJGRvICIRF5xtqeuwTAQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+           <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1ee7h9ypV8MpZd3rWIJS5KextfCxeHqQL');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1ee7h9ypV8MpZd3rWIJS5KextfCxeHqQL');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library</h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1K7n4Gd5p9XL1MAgxeCb3WLKSAjw_Mbh5/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+  
+  <div class="cp" id="microprocessor" style="display:none;">
+    <center><br/> <h3>Course Lectures</h3><br/> </center>
+     <center><iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLlsZICrXad5bsMUBGqCRdHcXqI2agU7_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+           <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1jo5XZkOKD3iNQ9Du7nRJ1xZxkH8MzRXS');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1jo5XZkOKD3iNQ9Du7nRJ1xZxkH8MzRXS');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library</h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1iKOtoNwTAbbu43lFLigIDBencHvdD214/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+  
+    <div class="cp" id="webdd" style="display:none;">
+      <center><br/> <h3>Course Lectures</h3><br/> </center>
+     <center><iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLLFu4Nd83Kc5zXz7RNYKhffbRELafUhVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+           <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1KQi-hYPHHqodqIziiOjAZPhapMLCMdqm');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1KQi-hYPHHqodqIziiOjAZPhapMLCMdqm');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library</h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1kvR4A52ygVk85bteDhUfXWgqZI0iH5ll/view?usp=sharing"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+    <div class="cp" id="dataanalysis" style="display:none;">
+      <center><br/> <h3>Course Lectures</h3><br/> </center>
+     <center><iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLLFu4Nd83Kc6w2_Ep1ByxLowYzsKwevTi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+           <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1KIj1aysgy2kFzClYNFdDHZlFyo-ikP0Z');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1KIj1aysgy2kFzClYNFdDHZlFyo-ikP0Z');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library</h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1QwO2EPAKW5K9UZfcpbxmVjUU_3H12qro/view?usp=sharing"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+  
+  <div class="cp" id="antennatheory" style="display:none;">
+     <center><br/> <h3>Course Lectures</h3><br/> </center>
+     <center><iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLLFu4Nd83Kc5_qJR3IKa2M35E3QF1aKrV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+           <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1hvYGe--h0xr5zH889pUM3luDQeFwKjuW');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1hvYGe--h0xr5zH889pUM3luDQeFwKjuW');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library</h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1qE32c7s-JHltQL6wBx8FIbH4caDnrYyp/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <div class="cp" id="programmingparadigms" style="display:none;">
+     <center><br/> <h3>Course Lectures</h3><br/> </center>
+     <center><iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PL21SKjVmRl9-xLPQEW8AUnEmQ9JktYstD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center>
+           <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+          	<div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1VsNqKY8XUvHo09WfRNOfmDuRL-MgUY2A');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1VsNqKY8XUvHo09WfRNOfmDuRL-MgUY2A');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library</h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1Bau23cJpfYZ55CATaN8ieUnO_5E98CJp/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+          	</div>
+           </div>
+         </div>
+
+  <div class="cp" id="signalsandsystems1" style="display:none;">
+       <center>  <br/> <h3>Course Lectures</h3><br/></center>
+       <center> <iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLdHodQ8VcFnzmEx6qVknwhDvTFdGz3aIK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+         <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+          	<div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1KXLdyutBXGbAKgdZ8OJo-paVS1bg_lxw');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"><br/></h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1KXLdyutBXGbAKgdZ8OJo-paVS1bg_lxw');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"><br/></h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1TknLGbRpslfUi5rofALksFzPGqkhRg4c/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+          	</div>
+          </div>
+        </div>
+
+  <div class="cp" id="signalsandsystems2" style="display:none;">
+
+       <center>  <br/> <h3>Course Lectures</h3><br/></center>
+       <center> <iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLdHodQ8VcFnwTj8VeximpHFcRCAp9By-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+         <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1SZeiyowySrTkOK7mIYn5Us2O0NUobnFh');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1SZeiyowySrTkOK7mIYn5Us2O0NUobnFh');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library </h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1_4DoJCtfKgtq7Voc5hHajvIZGxgUTrIu/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+
+
+    <div class="cp" id="english2" style="display:none;">
+      <center>  <br/> <h3>Course Lectures</h3><br/></center>
+       <center> <iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLeVxAnFsasIqIc8b03kHA3tw-xfIwgO2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+         <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1253VGaZVEDalwS1osSRHt1k-5412Z9XN');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Text Book</h3>
+                    <p>By Group B</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://drive.google.com/uc?export=view&id=1253VGaZVEDalwS1osSRHt1k-5412Z9XN');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">KHW Library </h3>
+                    <p>Student Friendly , unique design</p>
+                    <a href="https://drive.google.com/file/d/1MXEQzbL7jnVTUvdEwjNQgSwL4vuBDLvi/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+
+      <div class="cp" id="objectorientedprogramming" style="display:none;">
+
+      <center>  <br/> <h3>Course Lectures</h3><br/></center>
+       <center> <iframe class="video" width="650" height="380" src="https://www.youtube.com/embed/videoseries?list=PLlsZICrXad5a39ERgjAzaY4n6oAwtoTeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+         <center><br/><br/><h3>Text Books</h3></center>
+           <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style="background-image: url('https://www.cengage.com/covers/imageServlet?productISBN13=9781337102087&image_type=LRGFC&catalog=cengage');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"><br/></h3>
+                    <p><br/></p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                  </div>
+                </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://www.cengage.com/covers/imageServlet?productISBN13=9781337102087&image_type=LRGFC&catalog=cengage');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header"><br/></h3>
+                    <p><br/></p>
+                    <a href="https://drive.google.com/file/d/1EijwVQx2MUCRXUEWa_k9_aXAHEUFkPoQ/preview"> <button class="flip-box-button">Preview</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+         </div>
+
+  <div class="cp" id="lectures" style="display:none;">
+    <table class="customTable">
+      <thead>
+        <tr>
+          <th colspan="14" ; style="height:30px">
+            <h3>Department of Information & Communication Weekly lectures schedule/ Second Course/ 2020-2021</h3>
+          </th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="TEXT-align:center ">
+          <td>Day</td>
+          <td>Time</td>
+          <td colspan="3">1<sup>st</sup> Stage</td>
+          <td colspan="3">2<sup>nd</sup> Stage</td>
+          <td colspan="3">3<sup>rd</sup> Stage</td>
+          <td colspan="3">4<sup>th</sup> Stage</td>
+        </tr>
+        <tr style="TEXT-align:center ">
+          <td rowspan="6" style="width:10px ; writing-mode: vertical-rl;
+  text-orientation: upright">
+            <h3>Sunday</h3>
+          </td>
+          <td>8:30-9:30</td>
+          <td colspan="3">Electronic Devices lab G1/ Data AnalysisG2&G3 <br> م.م. احمد كاظم/ د.عادل فاضل
+          </td>
+          <td colspan="3">Web Design & Development <br> م.م. منى مصطفى
+          </td>
+          <td colspan="3">Network Protocols <br> م.م.طارق عماد
+          </td>
+          <td colspan="3">Cryptography <br> د.امير
+          </td>
+        </tr>
+        <tr>
+          <td>9:30-10:30</td>
+          <td colspan="3">Electronic Devices lab G2/ Data AnalysisG1&G4 <br> م.م. احمد كاظم/ د.عادل فاضل
+          </td>
+          <td colspan="3">Web Design & Development <br> م.م. منى مصطفى
+          </td>
+          <td colspan="3">Network Protocols <br> م.م.طارق عماد
+          </td>
+          <td colspan="3">Cryptography <br> د.امير
+          </td>
+        </tr>
+        <tr>
+          <td>10:30-11:30</td>
+          <td colspan="3">Electronic Devices lab G3/ Data AnalysisG5 <br>م.م. احمد كاظم/ د.عادل فاضل
+
+          </td>
+          <td colspan="3">Web Design & Development lab <br>م.م. منى مصطفى
+
+          </td>
+          <td colspan="3">Network Protocols lab <br>م.م.طارق عماد
+
+          </td>
+          <td colspan="3">Cryptography <br> د.امير
+          </td>
+
+        </tr>
+        <tr>
+          <td>11:30-12:30</td>
+          <td colspan="3">Electronic Devices lab G4 <br> م.م. احمد كاظم
+
+          </td>
+          <td colspan="3">Programming Paradigms <br> م.م. هبة محمد
+
+          </td>
+          <td colspan="3">Error Control Coding <br> م.م. علي صلاح
+
+          </td>
+          <td colspan="3">Project
+          </td>
+
+
+        </tr>
+        <tr>
+          <td>12:30-1:30</td>
+          <td colspan="3">Electronic Devices lab G5 <br> م.م. احمد كاظم
+
+          </td>
+          <td colspan="3">Programming Paradigms <br> م.م. هبة محمد
+
+          </td>
+          <td colspan="3">Error Control Coding <br> م.م. علي صلاح
+
+          </td>
+          <td colspan="3">Project
+          </td>
+
+        </tr>
+        <tr>
+          <td>1:30-2:30</td>
+          <td colspan="3"></td>
+          <td colspan="3">Programming Paradigms <br> م.م. هبة محمد
+
+          </td>
+          <td colspan="3">Error Control Coding <br> م.م. علي صلاح
+
+          </td>
+          <td colspan="3"></td>
+
+
+        </tr>
+        <tr>
+          <td rowspan="6" style="width:10px ; writing-mode: vertical-rl;
+  text-orientation: upright;">
+            <h3>Monday</h3>
+          </td>
+          <td>8:30-9:30</td>
+          <td colspan="3">Digital electronin lab G1
+            <br> د. علي حسين م.م. سليم مولى
+
+          </td>
+
+          <td colspan="3">Web Design & Development lab G1&G2/ Data Analysis G3&G4
+            <br> م.م. منى مصطفى/ م.م زينة اسامة
+
+
+          </td>
+          <td colspan="3"> DB
+            <br>م.م هبه محمد
+
+
+          </td>
+          <td colspan="3">Wireless Networking
+            <br> م.م احمد محمد
+
+
+          </td>
+
+
+
+        </tr>
+        <tr>
+          <td>9:30-10:30</td>
+          <td colspan="3">Digital electronin lab G2
+            <br>د. علي حسين م.م. سليم مولى
+
+
+          </td>
+          <td colspan="3">Web Design & Development lab G3&G4/ Data Analysis G1&G2
+            <br> م.م. منى مصطفى/ م.م زينة اسامة
+
+
+          </td>
+          <td colspan="3"> DB
+            <br> م.م هبه محمد
+
+
+          </td>
+          <td colspan="3">Wireless Networking
+            <br> م.م احمد محمد
+
+          </td>
+
+
+
+        </tr>
+        <tr>
+          <td>10:30-11:30</td>
+          <td colspan="3">Digital electronin lab G3/ Structure prog. Lab G1&G2 <br>
+            د. علي حسين + م.م. سليم /م.م. بيداء محمد
+
+          </td>
+          <td colspan="3">Programming Paradigms lab G1&G2 <br>
+            م.م. هبة محمد
+
+          </td>
+          <td colspan="3"> DB lab <br> م.م هبه محمد
+
+          </td>
+          <td colspan="3">Wireless Networking
+            <br> م.م احمد محمد
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>11:30-12:30</td>
+          <td colspan="3">Digital electronin lab G4/ Structure prog. Lab G3&G5
+            <br>د. علي حسين + م.م. سليم /م.م. بيداء محمد
+
+
+          </td>
+          <td colspan="3">Programming Paradigms lab G3&G4
+            <br>م.م. هبة محمد
+
+
+          </td>
+          <td colspan="3">Computer Algorithms
+            <br>د.فاطمة
+
+
+          </td>
+          <td colspan="3">Wireless Networking lab <br> م.م احمد محمد
+
+          </td>
+
+
+        </tr>
+        <tr>
+          <td>12:30-1:30</td>
+          <td colspan="3">Digital electronin lab G5/ Structure prog. Lab G4
+            <br>د. علي حسين + م.م. سليم /م.م. بيداء محمد
+
+
+          </td>
+          <td colspan="3">
+
+          </td>
+          <td colspan="3">Computer Algorithms
+            <br> د.فاطمة
+
+
+          </td>
+          <td colspan="3">Project
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>1:30-2:30</td>
+          <td colspan="3"></td>
+          <td colspan="3">
+
+          </td>
+          <td colspan="3">Computer Algorithms
+            <br>د.فاطمة
+
+
+          </td>
+          <td colspan="3"> Project
+          </td>
+
+        <tr style="TEXT-align:center ">
+          <td rowspan="6" style="width:10px ; writing-mode: vertical-rl;
+  text-orientation: upright;">
+            <h3>Tuesday</h3>
+          </td>
+          <td>8:30-9:30</td>
+          <td colspan="3">math2
+            <br> د.عادل فاضل
+          </td>
+
+          <td colspan="3">Analogue Communication lab G1/ DSD lab G2&G3
+            <br>د.عمر علي/ د.علي حسين
+
+
+          </td>
+          <td colspan="3">Digital Comm. Systems
+            <br>د. زينة عباس
+
+
+          </td>
+          <td colspan="3">Optical
+            <br> د.عمر يوسف
+
+
+          </td>
+
+
+
+        </tr>
+        <tr>
+          <td>9:30-10:30</td>
+          <td colspan="3">math2
+            <br> د. عادل فاضل
+
+
+
+          </td>
+          <td colspan="3">Analogue Communication lab G2/ DSD lab G1&G4
+            <br>د.عمر علي/ د.علي حسين
+
+
+          </td>
+          <td colspan="3">Digital Comm. Systems
+            <br>د. زينة عباس
+
+          </td>
+          <td colspan="3">Optical <br>د.عمر يوسف
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>10:30-11:30</td>
+          <td colspan="3">math2 <br>د. عادل فاضل
+
+          </td>
+          <td colspan="3">Analogue Communication lab G3
+            <br>د.عمر علي
+
+
+          </td>
+          <td colspan="3">Digital Comm. Systems
+            <br>د. زينة عباس
+
+          </td>
+          <td colspan="3">Optical
+            <br> د.عمر يوسف
+          </td>
+
+        </tr>
+        <tr>
+          <td>11:30-12:30</td>
+          <td colspan="3">english
+            <br> م.م ابراهيم عجيل
+
+
+          </td>
+          <td colspan="3">Analogue Communication lab G4
+            <br> د.عمر علي
+
+
+          </td>
+          <td colspan="3">Technical Assignment
+            <br> م.م احمد محمد م.م طارق عماد
+
+
+          </td>
+          <td colspan="3">Optical lab <br> د.عمر يوسف
+
+          </td>
+
+
+        </tr>
+        <tr>
+          <td>12:30-1:30</td>
+          <td colspan="3">english
+            <br> م.م ابراهيم عجيل
+
+
+          </td>
+          <td colspan="3">
+          </td>
+          <td colspan="3">Technical Assignment
+            <br>م.م احمد محمد م.م طارق عماد
+
+
+          </td>
+          <td colspan="3">
+          </td>
+
+        </tr>
+        <tr>
+          <td>1:30-2:30</td>
+          <td colspan="3">Democracy <br> م.م مروه
+
+          </td>
+          <td colspan="3">
+          </td>
+          <td colspan="3">
+          </td>
+          <td colspan="3"></td>
+
+
+        </tr>
+        <tr style="TEXT-align:center ">
+          <td rowspan="6" style="width:10px ; writing-mode: vertical-rl;
+  text-orientation: upright">
+            <h3>Wednesday</h3>
+          </td>
+          <td>8:30-9:30</td>
+          <td colspan="3">Digital electronin
+            <br> د.عمر علي
+          </td>
+
+          <td colspan="3">Analogue Communication<br> د.عمر علي
+
+
+          </td>
+          <td colspan="3"> Computer Algorithms lab G1 / Network Protocols lab G2
+            <br>د.فاطمة/ م.م.طارق عماد
+
+
+          </td>
+          <td colspan="3">Information Systems
+            <br> م.م. نور قدوري
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>9:30-10:30</td>
+          <td colspan="3">Digital electronin
+            <br> د. علي حسين
+
+          </td>
+          <td colspan="3">Analogue Communication
+            <br> د.عمر علي
+
+          </td>
+          <td colspan="3"> Computer Algorithms lab G2 / Network Protocols lab G1
+            <br>د.فاطمة/ م.م.طارق عماد
+
+
+          </td>
+          <td colspan="3">Information Systems
+            <br> م.م. نور قدوري
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>10:30-11:30</td>
+          <td colspan="3">Digital electronin
+            <br>د. علي حسين
+
+          </td>
+          <td colspan="3">Analogue Communication
+            <br>د.عمر علي
+
+          </td>
+          <td colspan="3">Computer Algorithms lab G3
+            <br>د.فاطمة
+
+          </td>
+          <td colspan="3">Information Systems
+            <br> م.م. نور قدوري
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>11:30-12:30</td>
+          <td colspan="3">Structure prog. Lab
+            <br> م.م. بيداء محمد
+
+          </td>
+          <td colspan="3">Signal_2
+            <br> د.احمد ستار
+
+          </td>
+          <td colspan="3">Network Protocols lab G3
+            <br>م.م.طارق عماد
+
+
+          </td>
+          <td colspan="3">sat.communication <br>د.لواء فيصل
+
+          </td>
+        </tr>
+        <tr>
+          <td>12:30-1:30</td>
+          <td colspan="3">
+
+          </td>
+          <td colspan="3">Signal_2
+            <br>د.احمد ستار
+          </td>
+          <td colspan="3">Technical Assignment
+            <br>م.م احمد محمد م.م طارق عماد
+
+          </td>
+          <td colspan="3">sat.communication <br>د.لواء فيصل
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>1:30-2:30</td>
+          <td colspan="3"></td>
+          <td colspan="3">Signal_2 <br> د.احمد ستار
+
+          </td>
+          <td colspan="3">Technical Assignment
+            <br>م.م احمد محمد م.م طارق عماد
+
+
+          </td>
+          <td colspan="3">sat.communication <br>د.لواء فيصل
+
+          </td>
+
+        </tr>
+        <tr style="TEXT-align:center ">
+          <td rowspan="6" style="width:10px ; writing-mode: vertical-rl;
+  text-orientation: upright">
+            <h3>Thursday</h3>
+          </td>
+          <td>8:30-9:30</td>
+          <td colspan="3">Structure prog.
+            <br> م.م. بيداء محمد
+          </td>
+
+          <td colspan="3">Antenna Theory
+            <br>د. لواء
+          </td>
+          <td colspan="3"> Digital Comm. Systems labG 1
+            <br>د. زينة عباس
+          </td>
+          <td colspan="3">Wireless Networking lab G1/Optical lab G2
+            <br> م.م احمد محمد/ د.عمر يوسف
+
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>9:30-10:30</td>
+          <td colspan="3">Structure prog.
+            <br> م.م. بيداء محمد
+          </td>
+          <td colspan="3">Antenna Theory
+            <br> د. لواء
+          </td>
+          <td colspan="3"> Digital Comm. Systems labG 2
+            <br>د. زينة عباس
+
+          </td>
+          <td colspan="3">Wireless Networking lab G2/Optical lab G1
+            <br> م.م احمد محمد/ د.عمر يوسف
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>10:30-11:30</td>
+          <td colspan="3">Structure prog.
+            <br>م.م. بيداء محمد
+
+          </td>
+          <td colspan="3">Antenna Theory
+            <br>د. لواء
+
+          </td>
+          <td colspan="3">Digital Comm. Systems labG 3/DB lab G1&G2
+            <br>د.زينة /م.م هبه محمد
+
+          </td>
+          <td colspan="3">
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>11:30-12:30</td>
+          <td colspan="3">Electronic Devices
+            <br> م.م. احمد كاظم
+
+          </td>
+          <td colspan="3">DSD
+            <br>د.علي حسين
+
+          </td>
+          <td colspan="3">DB labG3
+            <br>م.م هبه محمد
+
+          </td>
+          <td colspan="3">
+
+          </td>
+        </tr>
+        <tr>
+          <td>12:30-1:30</td>
+          <td colspan="3">Electronic Devices <br>م.م. احمد كاظم
+          </td>
+          <td colspan="3">DSD
+            <br>د.علي حسين
+          </td>
+          <td colspan="3">DB labG3
+            <br>م.م هبه محمد
+
+          </td>
+          <td colspan="3">
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>1:30-2:30</td>
+          <td colspan="3">Electronic Devices <br>م.م. احمد كاظم
+          </td>
+
+          <td colspan="3">DSD
+            <br> د.علي حسين
+
+          </td>
+          <td colspan="3">
+          </td>
+          <td colspan="3">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="div2" style="display:none;">
+    div2
+  </div>
+  <script>
+    function show(param_div_id) {
+      document.getElementById('maindiv').innerHTML = document.getElementById(param_div_id).innerHTML;
+    }
+
+    function showpdf(pdf) {
+      document.getElementById('pdf').innerHTML = document.getElementById(pdf).innerHTML;
+    }
+
+var checkbox = document.getElementById("ChangeTheme"); //get the checkbox to a variable
+const themeStylesheet = document.getElementById('theme');
+const themeToggle = document.getElementById('theme-toggle');
+//check storage if dark mode was on or off
+if (sessionStorage.getItem("mode") == "dark") {
+  darkmode(); //if dark mode was on, run this funtion
+} else {
+  nodark(); //else run this funtion
+}
+
+//if the checkbox state is changed, run a funtion
+checkbox.addEventListener("change", function() {
+  //check if the checkbox is checked or not
+  if (checkbox.checked) {
+    darkmode(); //if the checkbox is checked, run this funtion
+  } else {
+    nodark(); //else run this funtion
+  }
+});
+
+//function for checkbox when checkbox is checked
+function darkmode() {
+
+      themeStylesheet.href = 'dark-theme.css'; //add a class to the body tag
+  checkbox.checked = true; //set checkbox to be checked state
+  sessionStorage.setItem("mode", "dark"); //store a name & value to know that dark mode is on
+}
+
+//function for checkbox when checkbox is not checked
+function nodark() {
+themeStylesheet.href = 'light-theme.css'; //remove added class from body tag
+  checkbox.checked = false; //set checkbox to be unchecked state
+  sessionStorage.setItem("mode", "light"); //store a name & value to know that dark mode is off or light mode is on
+}
+
+  </script>
+</body>
+
+</html>
